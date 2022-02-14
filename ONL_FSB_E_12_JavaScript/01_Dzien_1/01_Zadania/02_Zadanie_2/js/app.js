@@ -1,25 +1,13 @@
 /**
  * Przerób poniższe metody na funkcje strzałkowe
  */
-function isArrayIncludeValue(value, array) {
-  return array.includes(value);
-}
+isArrayIncludeValue = (value, array) => array.includes(value);
 
-function sum(num1, num2) {
-  return num1 + num2;
-}
+const sum = (num1, num2) => num1 + num2
 
-const printArray = function (array) {
-  array.forEach(function (element) {
-    console.log(element);
-  });
-};
+const printArray = (array) => array.forEach((element) => console.log(element));
 
-const filterNumbersFromArray = function (array) {
-  return array.filter(function (el) {
-    return typeof el === "number";
-  });
-};
+const filterNumbersFromArray = (array) => array.filter((el) => typeof el === "number");
 
 
 /**
