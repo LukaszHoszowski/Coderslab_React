@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="logo"><img src="assets/icons/logo.svg"/> Weather App</div>
+    <button class="btn" id="add-city">Dodaj miasto <i class="material-icons">add_circle</i></button>
+  </div>
+</header>
+
+<section id="app" class="container">
+
+  <!-- Moduł wyszukiwarki - domyślnie ukryty -->
+  <div class="module module__form" hidden>
+    <button class="btn btn--icon btn--close"><i class="material-icons">close</i></button>
+    <h2>Znajdź miasto</h2>
+
+    <form novalidate autocomplete="off" class="find-city">
+      <input type="text" name="search" id="search" placeholder="np. Wrocław"/>
+      <button type="submit"><i class="material-icons">search</i></button>
+    </form>
+    <div class="search-error"></div>
+  </div>
+
+  <!--
+     Moduł pogody
+     Poniższy kod możecie potraktować jako template do kolejnych modułów
+     Możecie go sklonować używając metody cloneNode(true), i powstawiać odpowiednie wartości z aktualnego miasta.
+  -->
+  <div class="module module__weather" hidden>
+    <button class="btn btn--icon btn--close"><i class="material-icons">close</i></button>
+
+    <div class="weather">
+      <div class="weather__icon"><img src="assets/icons/partly-cloudy-day.svg"/></div>
+
+      <div class="weather__info">
+        <div class="city">
+          <span class="city__name">Wrocław</span> <span class="btn btn--icon"><i class="material-icons">edit</i></span>
+        </div>
+        <div class="temperature"><span class="temperature__value">16.5</span>&deg;C</div>
+      </div>
+
+      <ul class="weather__details">
+        <li><img src="assets/icons/pressure.svg"/> <span class="pressure__value">998 hPa</span></li>
+        <li><img src="assets/icons/humidity.svg"/> <span class="humidity__value">45%</span></li>
+        <li><img src="assets/icons/wind-speed.svg"/> <span class="wind-speed__value">5.5 m/s</span></li>
+      </ul>
+
+      <ul class="weather__forecast">
+        <li>
+          <span class="day">Wtorek</span> <img src="assets/icons/clear-day.svg"/>
+          <span class="temperature"><span class="temperature__value">10.0</span>&deg;C</span>
+        </li>
+
+        <li>
+          <span class="day">Środa</span> <img src="assets/icons/snow.svg"/>
+          <span class="temperature"><span class="temperature__value">-2.3</span>&deg;C</span>
+        </li>
+
+        <li>
+          <span class="day">Czwartek</span> <img src="assets/icons/rain.svg"/>
+          <span class="temperature"><span class="temperature__value">4.8</span>&deg;C</span>
+        </li>
+
+        <li>
+          <span class="day">Piątek</span> <img src="assets/icons/cloudy.svg"/>
+          <span class="temperature"><span class="temperature__value">5.0</span>&deg;C</span>
+        </li>
+
+        <li>
+          <span class="day">Sobota</span> <img src="assets/icons/hail.svg"/>
+          <span class="temperature"><span class="temperature__value">8.6</span>&deg;C</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="loading">
+    <div class="dual-ring"></div>
+  </div>
+</section>
+
+<script src="build/out.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

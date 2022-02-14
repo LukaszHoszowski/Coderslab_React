@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>JavaScript Prework - Zadania</title>
+  <script src="https://fer-api.coderslab.pl/bootstrap/js/index.js"></script>
+  <script>new CL({
+    title: "JavaScript",
+    path: ["Prework", "DOM i Zdarzenia", "Zadanie 3"],
+  });</script>
+</head>
+<body>
+
+<main class="container">
+  <table class="table shadow">
+    <thead class="thead-dark">
+    <tr>
+      <th colspan="3">Tablica wyników</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Drużyna 1</td>
+      <td>Drużyna 2</td>
+      <td>Wynik:</td>
+    </tr>
+    <tr>
+      <td>Kometa Pionki</td>
+      <td>Błyskawica Ostrołęka</td>
+      <td>3 - 4</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="card mt-5 shadow-sm">
+    <div class="card-body">
+      <form>
+        <h3>Drużyna 1</h3>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="team1">Nazwa</label>
+              <input type="text" class="form-control" id="team1" name="team1">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="points1">Ilość punktów</label>
+              <input type="text" class="form-control" id="points1" name="points1">
+            </div>
+          </div>
+        </div>
+
+        <h3 class="mt-4">Drużyna 2</h3>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="team2">Nazwa</label>
+              <input type="text" class="form-control" id="team2" name="team2">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="points2">Ilość punktów</label>
+              <input type="text" class="form-control" id="points2" name="points2">
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary">Dodaj</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>
