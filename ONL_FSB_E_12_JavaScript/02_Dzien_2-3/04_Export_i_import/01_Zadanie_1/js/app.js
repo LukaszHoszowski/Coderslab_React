@@ -7,11 +7,10 @@
 //     Twoim zadaniem jest połączenie plików w taki sposób, aby Square widział Polygon, a plik app.js widział klasę Square.
 
 
-
+import {Square} from "./Square.js"
 
 const square = new Square(2);
 square.sayName();
 console.log(square.area());
 console.log(new Square().area());
 
-import {Square} from "./Square.js"
