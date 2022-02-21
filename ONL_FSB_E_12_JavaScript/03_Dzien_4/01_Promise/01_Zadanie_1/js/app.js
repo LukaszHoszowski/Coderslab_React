@@ -9,3 +9,18 @@ const getNames = function () {
     }, 2000);
   });
 };
+
+function renderNames(names) {
+  names.forEach(name=>{
+    const newLi = document.createElement("li");
+    newLi.classList.add("list-group-item");
+    newLi.innerText = name
+    ulList.append(newLi)
+      }
+  )
+
+
+
+}
+
+getNames().then(renderNames)
