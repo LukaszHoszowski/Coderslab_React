@@ -1,9 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const redDiv = <div/>;
-const greenDiv = <div/>;
-const blueDiv = <div/>;
+const style = {
+  height: "100px",
+  backgroundColor: "red"
+}
+
+const redDiv = <div style={style}/>;
+const greenDiv = <div style={{height: "100px", backgroundColor: "green"}}/>;
+const blueDiv = <div style={{height: "100px", backgroundColor: "blue"}}/>;
 
 ReactDOM.render(
   <>

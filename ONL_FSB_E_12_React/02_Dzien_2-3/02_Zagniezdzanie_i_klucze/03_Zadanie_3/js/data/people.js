@@ -7,7 +7,7 @@ export default [
     pesel: 66111626126,
     bio:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla, diam non tempus vulputate, tellus massa viverra diam, eget scelerisque ipsum ipsum vel sem.",
-    avatar: "https://image.flaticon.com/icons/svg/145/145852.svg"
+    avatar: "https://www.svgrepo.com/show/5125/avatar.svg"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export default [
     pesel: 53052334461,
     bio:
       "Nullam in dignissim nibh. Sed lorem arcu, consectetur vel posuere quis, cursus sit amet massa. In eleifend ut urna in sodales. Vestibulum viverra lectus in efficitur ultricies.",
-    avatar: "https://image.flaticon.com/icons/svg/145/145867.svg"
+    avatar: "https://www.svgrepo.com/show/151777/avatar.svg"
   },
   {
     id: 3,
@@ -27,6 +27,6 @@ export default [
     pesel: 67032584953,
     bio:
       "Phasellus euismod leo non lacus congue dapibus. Curabitur iaculis faucibus euismod. Vestibulum sem metus, congue at lacinia eget, suscipit at nunc.",
-    avatar: "https://image.flaticon.com/icons/svg/145/145862.svg"
+    avatar: "https://www.svgrepo.com/show/52962/avatar.svg"
   }
 ];
